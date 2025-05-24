@@ -1,4 +1,4 @@
-package data;
+package hmm.data;
 
 import java.util.*;
 import java.io.InputStream;
@@ -32,7 +32,7 @@ public class Model {
      *
      * @param modelSource InputStream untuk membaca model.
      * @throws IOException Jika terjadi masalah I/O saat membaca file.
-     * @throws IllegalArgumentException Jika data model tidak valid (misal: kurang dari 2 state).
+     * @throws IllegalArgumentException Jika hmm.data model tidak valid (misal: kurang dari 2 state).
      * @throws NoSuchElementException Jika format file tidak sesuai dan Scanner tidak bisa menemukan token yang diharapkan.
      */
     public void readModel(InputStream modelSource) throws IOException, IllegalArgumentException, NoSuchElementException {
